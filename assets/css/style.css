@@ -751,6 +751,12 @@ html,body{overflow-x:hidden}
   .lh-price-cta p{font-size:14px}
 }
 
+/* One shared outside rhythm for every content section. */
+:root{--section-space:96px}
+.lh-section{padding-block:var(--section-space)}
+.lh-trust + #services{padding-top:var(--section-space)}
+@media(max-width:760px){:root{--section-space:64px}}
+
 /* The price CTA reads as one action, followed by its calm reassurance. */
 @media(max-width:760px){
   .lh-price-cta{gap:10px}
