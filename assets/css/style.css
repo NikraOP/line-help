@@ -757,6 +757,23 @@ html,body{overflow-x:hidden}
 .lh-trust + #services{padding-top:var(--section-space)}
 @media(max-width:760px){:root{--section-space:64px}}
 
+/* Keep the phone hero clear of the fixed contact widgets. */
+@media(max-width:760px){
+  .lh-hero,.lh-hero__inner{min-height:860px}
+  .lh-hero__inner{padding-top:70px;padding-bottom:110px}
+  .lh-hero__content{transform:translateY(-70px)}
+  .lh-hero__actions{margin-top:50px}
+  .lh-benefits{margin-top:16px}
+  .lh-benefit{min-height:106px}
+}
+@media(max-width:360px){
+  .lh-hero,.lh-hero__inner{min-height:800px}
+  .lh-hero__content{transform:translateY(-48px)}
+  .lh-hero__actions{margin-top:42px}
+  .lh-benefits{margin-top:14px}
+  .lh-benefit{min-height:94px}
+}
+
 /* The price CTA reads as one action, followed by its calm reassurance. */
 @media(max-width:760px){
   .lh-price-cta{gap:10px}
