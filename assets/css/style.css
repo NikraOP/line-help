@@ -797,6 +797,16 @@ html,body{background:#2a3930}
   .lh-footer{padding-bottom:72px}
 }
 
+/* A quieter, consistent scale for mobile section headings and introductory copy. */
+@media(max-width:760px){
+  .lh-title{font-size:clamp(28px,7.4vw,32px);line-height:1.1}
+  .lh-lead,.lh-about__copy p{font-size:16px;line-height:1.45}
+}
+@media(max-width:360px){
+  .lh-title{font-size:27px}
+  .lh-lead,.lh-about__copy p{font-size:15px}
+}
+
 /* The price CTA reads as one action, followed by its calm reassurance. */
 @media(max-width:760px){
   .lh-price-cta{gap:10px}
