@@ -807,6 +807,8 @@ html,body{background:#2a3930}
   .lh-lead,.lh-about__copy p{font-size:15px}
 }
 
+.lh-mobile-nav .lh-mobile-phone{color:var(--accent);font-weight:700}
+
 /* The price CTA reads as one action, followed by its calm reassurance. */
 @media(max-width:760px){
   .lh-price-cta{gap:10px}
