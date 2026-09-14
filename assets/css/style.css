@@ -719,6 +719,27 @@ html,body{overflow-x:hidden}
   .lh-price-from{margin:0 0 14px}
 }
 
+/* The process section uses the footer's calm dark tone and a compact 2×2 phone grid. */
+.lh-process{background:#2a3930;color:#fff;border-color:#2a3930}
+.lh-process .lh-title{color:#fff}
+.lh-process .lh-step{background:rgba(255,255,255,.055);border-color:rgba(255,255,255,.18)}
+.lh-process .lh-step__number{color:#b2d26d}
+.lh-process .lh-step h3{color:#fff}
+.lh-process .lh-step p{color:#d7e0d4}
+@media(max-width:760px){
+  .lh-process-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:24px}
+  .lh-process .lh-step{min-height:154px;padding:17px 14px 16px;border-radius:14px}
+  .lh-process .lh-step__number{font-size:12px}
+  .lh-process .lh-step h3{margin:10px 0 8px;font-size:14px;line-height:1.16}
+  .lh-process .lh-step p{font-size:11px;line-height:1.35}
+}
+@media(max-width:360px){
+  .lh-process-grid{gap:8px}
+  .lh-process .lh-step{min-height:142px;padding:14px 11px}
+  .lh-process .lh-step h3{font-size:13px}
+  .lh-process .lh-step p{font-size:10px}
+}
+
 /* The price CTA reads as one action, followed by its calm reassurance. */
 @media(max-width:760px){
   .lh-price-cta{gap:10px}
