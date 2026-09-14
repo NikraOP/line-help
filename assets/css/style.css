@@ -707,6 +707,11 @@ html,body{overflow-x:hidden}
   .lh-hero__cta-row .lh-button--ghost{font-size:11px}
 }
 
+/* Preserve the doctor photo as the hero background at every phone size. */
+@media(max-width:760px){
+  .lh-hero{background:#526050 url('../migrated/586b7a93a107-f11.jpg') 60% center/cover no-repeat}
+}
+
 /* The price CTA reads as one action, followed by its calm reassurance. */
 @media(max-width:760px){
   .lh-price-cta{gap:10px}
