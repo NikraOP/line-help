@@ -809,6 +809,11 @@ html,body{background:#2a3930}
 
 .lh-mobile-nav .lh-mobile-phone{color:var(--accent);font-weight:700}
 
+/* Keep the existing arrow artwork, but give every CTA a smaller aligned arrow. */
+.lh-button .lh-arrow{display:block;flex:0 0 20px;width:20px;height:12px;align-self:center;transform:translateY(1px)!important}
+@media(max-width:760px){.lh-button .lh-arrow{flex-basis:18px;width:18px;height:11px}}
+@media(max-width:360px){.lh-button .lh-arrow{flex-basis:17px;width:17px;height:10px}}
+
 /* The price CTA reads as one action, followed by its calm reassurance. */
 @media(max-width:760px){
   .lh-price-cta{gap:10px}
