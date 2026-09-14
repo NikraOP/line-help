@@ -691,3 +691,18 @@ html,body{overflow-x:hidden}
   .lh-price-cta p{text-transform:none;font-size:15px;line-height:1.35}
   .lh-price-cta a{width:100%;padding:14px 16px;font-size:15px;white-space:normal}
 }
+
+/* The phone hero gives the text room to breathe without making one CTA visually louder. */
+@media(max-width:760px){
+  .lh-hero,.lh-hero__inner{min-height:780px}
+  .lh-hero__inner{padding-top:88px;padding-bottom:70px}
+  .lh-hero__actions{margin-top:102px}
+  .lh-hero__cta-row .lh-button--light .lh-cta-label{font-size:12px}
+  .lh-hero__cta-row .lh-button--ghost{font-size:12px}
+}
+@media(max-width:360px){
+  .lh-hero,.lh-hero__inner{min-height:730px}
+  .lh-hero__actions{margin-top:82px}
+  .lh-hero__cta-row .lh-button--light .lh-cta-label{font-size:11px}
+  .lh-hero__cta-row .lh-button--ghost{font-size:11px}
+}
