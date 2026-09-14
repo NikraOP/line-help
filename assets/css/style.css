@@ -745,6 +745,12 @@ html,body{overflow-x:hidden}
   .lh-footer{padding-bottom:150px}
 }
 
+@media(max-width:760px){
+  .lh-price-cta{gap:4px}
+  .lh-price-cta a{padding:17px 18px;font-size:19px}
+  .lh-price-cta p{font-size:14px}
+}
+
 /* The price CTA reads as one action, followed by its calm reassurance. */
 @media(max-width:760px){
   .lh-price-cta{gap:10px}
