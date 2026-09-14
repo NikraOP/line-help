@@ -774,6 +774,22 @@ html,body{overflow-x:hidden}
   .lh-benefit{min-height:94px}
 }
 
+/* On phones the process is an editorial 2×2 grid, not a group of cards. */
+@media(max-width:760px){
+  .lh-process-grid{gap:18px 14px}
+  .lh-process .lh-step{position:relative;min-height:0;padding:21px 2px 4px;border:0;border-radius:0;background:none}
+  .lh-process .lh-step::before{content:'';position:absolute;top:0;right:0;left:0;height:1px;background:rgba(255,255,255,.38)}
+  .lh-process .lh-step__number{font-size:12px}
+  .lh-process .lh-step h3{margin:11px 0 7px;font-size:14px;line-height:1.16}
+  .lh-process .lh-step p{font-size:11px;line-height:1.35}
+}
+@media(max-width:360px){
+  .lh-process-grid{gap:16px 10px}
+  .lh-process .lh-step{padding-top:18px}
+  .lh-process .lh-step h3{font-size:13px}
+  .lh-process .lh-step p{font-size:10px}
+}
+
 /* The price CTA reads as one action, followed by its calm reassurance. */
 @media(max-width:760px){
   .lh-price-cta{gap:10px}
