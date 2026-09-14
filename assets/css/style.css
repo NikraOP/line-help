@@ -740,6 +740,11 @@ html,body{overflow-x:hidden}
   .lh-process .lh-step p{font-size:10px}
 }
 
+/* A plain dark-green breathing area closes the phone footer. */
+@media(max-width:760px){
+  .lh-footer{padding-bottom:150px}
+}
+
 /* The price CTA reads as one action, followed by its calm reassurance. */
 @media(max-width:760px){
   .lh-price-cta{gap:10px}
