@@ -790,6 +790,13 @@ html,body{overflow-x:hidden}
   .lh-process .lh-step p{font-size:10px}
 }
 
+/* The page keeps the footer colour through the mobile browser safe area. */
+html,body{background:#2a3930}
+@media(max-width:760px){
+  .lh-footer__info{margin-top:52px}
+  .lh-footer{padding-bottom:72px}
+}
+
 /* The price CTA reads as one action, followed by its calm reassurance. */
 @media(max-width:760px){
   .lh-price-cta{gap:10px}
