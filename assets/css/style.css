@@ -712,6 +712,13 @@ html,body{overflow-x:hidden}
   .lh-hero{background:#526050 url('../migrated/586b7a93a107-f11.jpg') 60% center/cover no-repeat}
 }
 
+/* Keep the doctor photo visible and give service-card copy room to breathe on phones. */
+@media(max-width:760px){
+  .lh-hero{background-image:url('../migrated/586b7a93a107-f11.jpg')!important;background-position:60% center!important}
+  .lh-service__body p{display:-webkit-box;overflow:hidden;min-height:0;margin:0 0 18px;font-size:12.5px;line-height:1.36;-webkit-box-orient:vertical;-webkit-line-clamp:3}
+  .lh-price-from{margin:0 0 14px}
+}
+
 /* The price CTA reads as one action, followed by its calm reassurance. */
 @media(max-width:760px){
   .lh-price-cta{gap:10px}
