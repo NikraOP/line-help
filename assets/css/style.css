@@ -706,3 +706,10 @@ html,body{overflow-x:hidden}
   .lh-hero__cta-row .lh-button--light .lh-cta-label{font-size:11px}
   .lh-hero__cta-row .lh-button--ghost{font-size:11px}
 }
+
+/* The price CTA reads as one action, followed by its calm reassurance. */
+@media(max-width:760px){
+  .lh-price-cta{gap:10px}
+  .lh-price-cta a{order:1;padding:16px 18px;font-size:17px;line-height:1.2}
+  .lh-price-cta p{order:2;margin:0;white-space:nowrap;font-size:14px;line-height:1.25}
+}
